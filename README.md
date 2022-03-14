@@ -12,4 +12,4 @@ Mockup:
 ([Portfolio Mockup](https://miro.com/app/board/uXjVOGGPjfw=/?invite_link_id=798854105424))
 
 Live link of the project:
-([Portfolio Mockup](https://sarakteifan.github.io/Project1/))
+([Portfolio Live Link](https://sarakteifan.github.io/Project1/))
