@@ -36,36 +36,41 @@ nav a {color: #B1D0E0;
     border:1px solid #B1D0E0;
     border-radius: 5px;
     text-align: center;
-    margin: 0 20px;
+    margin: 5px 20px;
 }
 .scrollingdown a {color: #B1D0E0;}
-.sc1 {
+.sc1 {animation: ShowBuutons 0.5s ease-in 1 forwards;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.sc2 {grid-column-start: 1;
+.sc2 {animation: ShowBuutons 0.5s ease-in 1 forwards;
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.sc3 {grid-column-start: 1;
+.sc3 {animation: ShowBuutons 0.5s ease-in 1 forwards;
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.sc4 {grid-column-start: 5;
+.sc4 {animation: ShowBuutons 0.5s ease-in 1 forwards;
+    grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.sc5 {grid-column-start: 5;
+.sc5 {animation: ShowBuutons 0.5s ease-in 1 forwards;
+    grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.sc6 {grid-column-start: 5;
+.sc6 {animation: ShowBuutons 0.5s ease-in 1 forwards;
+    grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
@@ -201,58 +206,67 @@ padding-left: 60px;}
 i{color: black;
     font-size: larger;
 }
-.contact{display: flex;
-    flex-direction: row;
+.contact{display: inline-flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin: 0 20% 0 0;
+    font-size: 22px;
+    gap: 20px;
 }
-.contact i {margin: 3px;}
-.card {background-color:#B1D0E0;
-     border: solid #1A374D; 
-     border-radius: 10px; 
-     position:relative;
-     bottom: 20px;
-    }
-.followme{display: flex;
-    flex-direction: row;
-    justify-content: center;
+.contact i {margin: 0 5px;}
+
+.followme{display: inline-flex;
+    flex-direction: column;
 }
-.fa-github {font-size:80px;
-margin: 30px;}
+.fa-github {font-size:64px;
+    position: relative;
+    top:15px;
+  
+}
 .fa-linkedin-in, .fa-twitter {border: solid;
     border-radius: 100%; 
-    font-size: 40px; 
+    font-size: 20px; 
     padding: 20px; 
-    margin: 30px;
+    
 }
+.container .text {display: inline-flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 0 0 20%;
+    text-align:justify ;
+}
+
 .copyright{font-size: small;
     text-align: center;
+    margin-top: 5%;
 }
 
 /* More Style */
 
-
-/* .sc1:hover, .sc2:hover, .sc3:hover, .sc4:hover, .sc5:hover, .sc6:hover {width: 400px ;
-    height:50px ;
-    font-size: 30px;
-} */
+@keyframes ShowBuutons {
+    0% {background-color: #B1D0E0;}
+    100% {background-color: #1A374D;}
+}
 
 button{transition: ease-in 0.5s;}
 button:hover {cursor: pointer;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.fa-github:hover {font-size: 100px;}
-.fa-linkedin-in:hover, .fa-twitter:hover {font-size: 60px;}
+.fa-github:hover {font-size: 70px;}
+.fa-linkedin-in:hover, .fa-twitter:hover {font-size: 30px;}
 
 /* Media Query */
+@media (max-width: 1250px) {
+    nav a {left: 30%}
+}
 @media (max-width: 1024px) {
     .Education {gap: 70px;}
-    nav a {position: relative;
-        left: 30%;
-    }
+    footer span {font-size: 20px;}
+    .contact {margin: 0 5%;}
+    .container .text {margin: 0 5%;}
+}
+@media (max-width: 900px) {
+    nav a {left: 20%}
 }
 
 @media (max-width: 768px) {
@@ -276,16 +290,36 @@ button:hover {cursor: pointer;
     .subparent button { position: relative;
         left: 70%;
     }
-    .contact{flex-direction: column;}
-    .card{position: static;
-        text-align: center;
-        margin: 10px;
+
+    .fa-github {font-size:54px;}
+    .fa-linkedin-in, .fa-twitter {font-size: 12px; }
+
+    .container .text {display: block;
+        border: solid #1A374D;
+        border-radius: 5px;
+        width: auto;
+        margin: 5% 10%;
+        padding: 2%;
+        text-align:justify ;
     }
+
     nav a {position: relative;
         left: 10%;
     }
 }
-
+@media (max-width: 690px) {
+    nav a {position: static;}
+}
+@media (max-width: 638px) {
+    nav a {font-size: smaller;
+    }
+    nav h3 {font-size: smaller;}
+    .scrollingdown div {margin: 0;}
+}
+@media (max-width: 586px) {
+    nav h3 {display: none;}
+    body {font-size: smaller;}
+}
 @media (max-width: 426px) {
     body{font-size: smaller;}
     h1 {font-size: 30px;}
@@ -311,21 +345,20 @@ button:hover {cursor: pointer;
         left: 60%;
     }
     .contact{flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         font-size: 20px;
+        margin-bottom: 20px;
     }
-    .contact span {margin: 5px 0;}
-    .fa-github {font-size:60px;}
-    .fa-linkedin-in, .fa-twitter {font-size: 20px;}
-    nav a {position: relative;
-        left: 20%;
-        margin: 0 5px;
-    }
-    nav a:nth-child(n+5){
-        left: 30%;
-    }
-    nav br {display:block;}
+    .contact h2 {margin:0; }
+    .followme{margin: 20px;}
+    
+    nav a {position: static;
+        font-size: 10px;}
+    nav h3 {display: none;}
+
     .scrollingdown div {margin: 0;}
+
+    
 }
 
 @media (max-width: 376px) {
@@ -338,10 +371,9 @@ button:hover {cursor: pointer;
     .subparent button { position: relative;
         left: 50%;
     }
-    nav h3 {display: none;}
-    nav br {display: none;}
     nav a {position: static;
-    font-size: 10px;}
+        font-size: 10px;
+        margin: 0 5px;}
 } 
 
 @media (max-width: 321px) {
@@ -359,3 +391,7 @@ button:hover {cursor: pointer;
     .fa-github {font-size:55px;}
     .fa-linkedin-in, .fa-twitter {font-size: 15px;}
 } 
+@media (max-width: 310px) {
+    nav {display: static;}
+    nav br {display: static;}
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/ccfa87eec6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sara Kteifan's Skills</title>
+    <style>
+        h1 {animation: Header 0.5s ease-in 1 forwards ;
+            margin: 2%;
+        }
+        .SkillsParent div {border-radius: 10px;}
+        .SkillsParent{background-color: #B1D0E0;
+            padding: 2%;
+        }
+        .SkillsParent h2 {animation: Header 0.5s ease-in 1 forwards ;}
+        .TechnicalSkills{background-color: white;
+            margin: 2%;
+            padding: 2%;
+        }
+        .SoftSkills{background-color: white;
+            margin: 2%;
+            padding: 2%;
+        }
+        .HL{background-color: #1A374D;
+            width: 100%;
+            height: 10px;
+        }
+
+        /* Form */
+        .Form{background-color: #B1D0E0;
+            padding: 2%;
+        }
+        form h1 {text-align: center;}
+        form .div1 label {display: block;}
+        form .div1 input {width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        form .div4 label {display: block;}
+        form .div4 input {width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        form .div5 button {width: 100%;
+            height: 50px;
+            background-color: rgb(24, 153, 24);
+            border: none;
+            color: white;
+            margin: 5px 0;
+        }
+
+        @keyframes Header {
+            from {font-size: smaller;}
+            to {font-size: auto;}
+        }
+        @media (max-width:426px) {
+              h1 {margin: 5%;}
+            }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>SK</h3>
+        <a href="../index.html"> Home</a>
+        <a href="../index.html#S1"> Education</a>
+        <a href="../index.html#S2"> Projects</a> <br>
+        <a href="../index.html#S3"> Experience</a>
+        <a href="#Skills"> My Skills</a>
+        <a href="#S4"> Contact</a>
+    </nav>
+    <br id="Skills">
+
+    <div class="SkillsParent container">
+        <h1>My Skill Set</h1>
+        <hr>
+        <div class="TechnicalSkills">
+            <h2>Technical Skills</h2>
+            <label for="HTML">HTML <i class="fa-brands fa-html5"></i></label>
+            <div class="progress" id="HTML">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+
+            <label for="CSS">CSS <i class="fa-brands fa-css3-alt"></i></i></label>
+            <div class="progress" id="CSS">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+
+            <label for="GitHub">GitHub <i class="fa-brands fa-github-square"></i></i></label>
+            <div class="progress" id="GitHub">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+
+            <label for="Bootstrap">Bootstrap <i class="fa-brands fa-bootstrap"></i></label>
+            <div class="progress" id="Bootstrap">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="SoftSkills">
+            <h2>Soft Skills</h2>
+            <label for="TeamWork">TeamWork</label>
+            <div class="progress" id="TeamWork">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+
+            <label for="SearchingSkill">Searching Skills</label>
+            <div class="progress" id="SearchingSkill">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+
+            <label for="Presentation">Presentation Skills</label>
+            <div class="progress" id="Presintation">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+
+            <label for="TimeManagement">Time Management</label>
+            <div class="progress" id="TimeManagement">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="HL"></div>
+    </div>
+
+    <!-- The Form -->
+    <div class="Form container">
+        <form>
+            <h1>Job Tracking Form</h1>
+            <hr>
+            <div class="div1">
+                <label for="jobtitle">Job Title</label>
+                <input id="jobtitle" type="text" placeholder="Job Title">
+                <label for="company">Company Name</label>
+                <input id="company" type="text" placeholder="Company Name">
+            </div>
+            <div class="div2">
+                <h4>City:</h4>
+                <input id="Amman" type="radio" name="city">
+                <label for="Amman">Amman</label>
+                <input id="Aqaba" type="radio" name="city">
+                <label for="Aqaba">Aqaba</label>
+                <input id="Other" type="radio" name="city">
+                <label for="Other">Other</label>
+            </div>
+            <div class="div3">
+                <label for="date">Job Interview Date</label>
+                <input id="date" type="date">
+            </div>
+            <div class="div4">
+                <label for="note">Note</label>
+                <input id="note" type="text" placeholder="Job Interveiw Note">
+            </div>
+            <div class="div5">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- The Footer -->
+    <footer>
+        <div class="horizontalline"></div>
+        <div class="footer">
+            <br id="S4">
+            <div class="container">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <span><i class="fa-regular fa-envelope"></i>skteifan@gmail.com</span>
+                    <span><i class="fa-regular fa-mobile-screen-button"></i>0778090516</span>
+                </div>
+           
+                <div class="followme">
+                    <h2>Follow Me On</h2>
+                    <div>
+                        <a href="https://github.com/SaraKteifan" target="blanck"><i class="fa-brands fa-github"></i> </a>
+                        <a href="https://www.linkedin.com/in/sara-kteifan-38803222a/" target="blanck"><i class="fa-brands fa-linkedin-in" ></i></a>
+                        <a href="https://twitter.com/KteifanSara" target="blanck"><i class="fa-brands fa-twitter"></i></a>
+                    </div>  
+                </div>
+    
+                <p class="text">Thank you for visiting my website. Feel free to contact me on my email or any social media account for any question, comment or anything else.</p>
+                              
+                <p class="copyright">Copyright <i class="fa-solid fa-copyright"></i> 2022, Sara Kteifan</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
